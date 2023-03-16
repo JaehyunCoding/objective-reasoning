@@ -12,7 +12,7 @@ function isAdmin (user){
 
 function getEmail (user){
     let firstName = user.firstName.toLowerCase()
-    let lastName = user.lastName.toUpperCase()
+    let lastName = user.lastName.toLowerCase()
     return firstName + "." + lastName + "@codeimmersives.com"
 }
 
@@ -22,7 +22,7 @@ function getPlaylistLength (playlist) {
 
 function getHardestHomework (homeworkArray) {
     let x = ""
-    if(homework.length === 0){
+    if(homeworkArray.length === 0){
         return x
     }   
     let lowestHw = homeworkArray[0]
